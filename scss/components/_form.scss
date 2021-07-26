@@ -1,0 +1,39 @@
+.form {
+  background-color: $beable-form-bg;
+  box-shadow: $beable-form-box-shadow;
+
+  &__header {
+    padding: $beable-form-padding-y $beable-form-padding-x;
+    border-bottom: $beable-form-border-width solid $beable-form-border-color;
+  }
+
+  &__body {
+    padding: $beable-form-padding-y $beable-form-padding-x;
+  }
+
+  &__group {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: $spacer;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: $beable-form-padding-y $beable-form-padding-x;
+    margin: $beable-form-padding-y  ( -$beable-form-padding-x ) ( -$beable-form-padding-y );
+    border-top: $beable-form-border-width solid $beable-form-border-color;
+  }
+}
+
+@media (min-width: 992px) {
+  .form {
+    &__group { flex-wrap: nowrap; }
+
+    &__label {
+      flex: 0 0 16%;
+      max-width: 16%;
+    }
+  }
+}

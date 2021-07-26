@@ -1,0 +1,93 @@
+.DayPickerNavigation__horizontal {
+  display: flex;
+  justify-content: space-between;
+
+  .DayPickerNavigation_button {
+    font-size: 1.5em;
+    margin: .46em .7em;
+  }
+}
+
+.DayPicker_weekHeader {
+  top: 38px;
+}
+
+.CalendarMonth_caption {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.DateRangePickerInput_arrow {
+  display: none;
+}
+
+.DateInput_input {
+  height: calc(1.6em + 0.75rem + 2px);
+  padding: 0.375rem;
+  background-clip: padding-box;
+  border-radius: 0;
+  color: #3E515B;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &__disabled {
+    background-color: $gray-200;
+    font-style: normal;
+  }
+
+  &.DateInput_input__small_2 {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.76562rem;
+    line-height: 1.5;
+    height: inherit;
+  }
+}
+
+
+.SingleDatePicker_picker {
+  z-index: 10000;
+}
+
+.DateRangePicker,
+.DateRangePickerInput,
+.SingleDatePicker,
+.SingleDatePickerInput{
+  display: block;
+}
+
+.DateInput {
+  width: 100%;
+}
+
+.DateRangePickerInput {
+  .DateInput {
+    width: calc(100%/2);
+  }
+}
+
+.SingleDatePickerInput_clearDate__small {
+  margin: 0;
+  padding: 0 6px;
+}
+
+.SingleDatePickerInput_clearDate_svg__small {
+  width: 5px;
+}
+
+
+.DateRangePickerInput__showClearDates {
+  padding-right: 20px;
+}
+
+.SingleDatePickerInput_clearDate,
+.DateRangePickerInput_clearDates {
+  margin: 0;
+  padding-left: 0;
+
+  &:hover {
+    background: none;
+    border-radius: 0;
+  }
+}

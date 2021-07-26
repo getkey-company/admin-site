@@ -1,0 +1,19 @@
+.loader-gts {
+  background: url('/img/helice-red.png') no-repeat center;
+  background-size: contain;
+
+  .corps{
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+.loader-gts-white {
+  background: url('/img/helice-white.png') no-repeat center;
+  background-size: contain;
+
+  .mini-corps{
+    height: 1rem;
+    width: 1rem;
+  }
+}

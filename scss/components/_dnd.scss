@@ -1,0 +1,44 @@
+.dnd-container {
+  .list-group-item {
+    background-color: #FAFBFC;
+    color: #091E42;
+    position: relative;
+
+    &.is-selected {
+      color: #2684FF;
+      background-color: #DEEBFF;
+    }
+
+    &.is-dragging {
+      box-shadow: 2px 2px 1px $gray-500;
+    }
+
+    &.is-ghosting {
+      opacity: 0.8;
+      color: $gray-500;
+      background-color: #FAFBFC;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    .selection-count {
+      right: -8px;
+      top: -8px;
+      color: $blue;
+      background: $gray-300;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      position: absolute;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  }
+
+  .disabled {
+    text-decoration: line-through;
+  }
+}

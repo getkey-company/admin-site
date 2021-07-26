@@ -1,0 +1,28 @@
+.flag {
+  display: inline-block;
+  background: transparent no-repeat center;
+  background-size: cover;
+  height : 24px;
+  width  : 24px;
+  margin : 5px;
+
+  &.fr {
+    background-image: url('/img/flags/fr.png');
+  }
+
+  &.en {
+    background-image: url('/img/flags/en.png');
+  }
+
+  &.it {
+    background-image: url('/img/flags/it.png');
+  }
+
+  &.de {
+    background-image: url('/img/flags/de.png');
+  }
+
+  &.active {
+    border-bottom: 2px solid #cb2027;
+  }
+}

@@ -1,0 +1,12 @@
+.real-estate {
+  &__criteria__form {
+    padding-left: 1rem;
+
+    &__items {
+      flex-grow: 1;
+      height: calc(100vh - 200px);
+      overflow: auto;
+      padding: 0 1rem;
+    }
+  }
+}

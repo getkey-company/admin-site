@@ -1,0 +1,47 @@
+@keyframes progress {
+  0%   {
+    background-position: 0 0;
+  }
+  100%   {
+    background-position: -70px 0;
+  }
+}
+
+.dropzone {
+  min-height: 150px;
+  background-color: #F0F0F0;
+  border: dashed;
+  border-color: #C8C8C8;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.stripes{
+  border: solid;
+  background-image: repeating-linear-gradient(-45deg, #F0F0F0, #F0F0F0 25px, #C8C8C8 25px, #C8C8C8 50px);
+  animation: progress 2s linear infinite !important;
+  background-size: 150% 100%;
+}
+
+.reject-stripes{
+  border: solid;
+  background-image: repeating-linear-gradient(-45deg, #fc8785, #fc8785 25px, #f4231f 25px, #f4231f 50px);
+  animation: progress 2s linear infinite !important;
+  background-size: 150% 100%;
+}
+
+.dropzone-text-style{
+  text-align: center;
+}
+
+.upload-icon-size {
+  font-size: 2em;
+}
+
+.dropzone-paragraph {
+  font-size: 24px;
+}

@@ -1,0 +1,10 @@
+// css from Front website, adapted to Backoffice
+
+$availability-color: #2e3192;
+$availability-bg-day: #dfdef4;
+$availability-bg-checked: #68c167;
+$availability-bg-unchecked: #fce7e4;
+
+@import 'availabilities';
+@import 'registration-visits-availabilities';
+@import 'registration-process';

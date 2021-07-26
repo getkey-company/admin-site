@@ -1,0 +1,87 @@
+//.availabilities-visits-step {
+//
+//  td {
+//    padding: 5px 0 5px 0;
+//  }
+//
+//  th {
+//    padding: 5px 0 5px 0;
+//  }
+//
+//  .visit-day-label {
+//    color: $availability-bg-day;
+//  }
+//
+//  form {
+//    width: 100%;
+//  }
+//
+//  th {
+//    font-size: 18px;
+//
+//    @media screen and (max-width: 1400px) {
+//      width: 12vw;
+//    }
+//  }
+//
+//  tr {
+//    text-align: center;
+//  }
+//}
+
+.availability-visits {
+  color: $availability-color;
+
+  .visit-day-label {
+    background-color: $availability-bg-day;
+  }
+
+  td {
+    width: 10vw;
+    //font-size: 20px;
+
+    @media screen and (max-width: 1400px) {
+      width: 12vw;
+    }
+  }
+
+  input {
+    padding-right: 10px;
+  }
+}
+
+//Title display rules
+
+.day-label {
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
+.day-label-small {
+  display: none;
+
+  @media screen and (max-width: 900px) {
+    display: block;
+  }
+}
+
+.visit-table-label {
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
+.visit-table-label-small {
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}
+
+.bg-visit-unchecked {
+  background-color: $availability-bg-unchecked;
+}
+
+.bg-visit-checked {
+  background-color: $availability-bg-checked;
+}

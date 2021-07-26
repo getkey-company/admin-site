@@ -1,0 +1,26 @@
+/*!
+ * GenesisUI - Bootstrap 4 Admin Template
+ * @version v1.8.14
+ * @link https://genesisui.com
+ * Copyright (c) 2018 creativeLabs Łukasz Holeczek
+ * @license https://genesisui.com/license.html
+ */
+
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Override Boostrap variables
+@import "abstracts/_mixins";
+@import "abstracts/_variables";
+
+// Vendor
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Base
+@import "base/base";
+
+// Components
+@import "components/components";
+
+// Pages
+@import "pages/pages";
+
